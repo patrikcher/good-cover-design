@@ -1,0 +1,20 @@
+# Dev-only: for running notebooks/ (exploration, not on the repro path).
+# The pipeline itself does not need these -- see requirements-frozen.txt for that.
+jupyterlab==4.6.3
+nbconvert==7.17.1
+nbclient==0.11.0
+ipykernel==7.3.0
+# matplotlib is already pulled in transitively (scikit-image); pinned here for the notebooks.
+matplotlib==3.11.1
+
+# Dev-only: for scripts/analysis/ocr_engine_ab.py (the EasyOCR-vs-Tesseract comparison).
+# Not a pipeline dependency -- the pipeline uses EasyOCR only. Also needs the tesseract
+# binary itself: `brew install tesseract` (macOS).
+pytesseract==0.3.13
+
+# Dev-only: for scripts/analysis/saliency_model_ab.py's U2Net comparison (the REJECTED
+# saliency replacement -- kept only to regenerate the "Where the Eye Goes" figure and rerun
+# the A/B). The deployed replacement is DeepGaze, which IS a real pipeline dependency now --
+# see requirements-frozen.txt and docs/setup.md, not here.
+rembg[cpu]==2.0.83
+onnxruntime==1.29.0

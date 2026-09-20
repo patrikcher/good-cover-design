@@ -1,0 +1,132 @@
+{
+  "clip_evr": 0.6036401987075806,
+  "n_clip_pcs": 100,
+  "results": {
+    "y_log_ratings": {
+      "models": {
+        "A": {
+          "n_params": 199,
+          "r2_train": 0.7616012560960955,
+          "r2_test": 0.7463939922637055,
+          "rmse_test": 0.526978978675873
+        },
+        "B": {
+          "n_params": 8,
+          "r2_train": 0.025775634157249483,
+          "r2_test": 0.028542975839480844,
+          "rmse_test": 1.0313957063419434
+        },
+        "C": {
+          "n_params": 206,
+          "r2_train": 0.7623564430865787,
+          "r2_test": 0.7472338370436404,
+          "rmse_test": 0.5261056800302789
+        },
+        "D": {
+          "n_params": 299,
+          "r2_train": 0.7699998075051654,
+          "r2_test": 0.7534779675781915,
+          "rmse_test": 0.5195668004375125
+        }
+      },
+      "a_vs_c": {
+        "block_wald_f_train": {
+          "F": 14.40729183003405,
+          "p": 7.705102298286481e-19,
+          "df_num": 7,
+          "df_denom": 33639
+        },
+        "delta_r2_test": 0.0008398447799349285,
+        "delta_r2_test_ci95": [
+          9.57649871655919e-05,
+          0.0015740516508699418
+        ],
+        "delta_rmse_test": -0.000873298645594045,
+        "paired_sqerr_test": {
+          "mean_sqerr_reduction": 0.000856924297209251,
+          "t": 1.6200017546825702,
+          "p": 0.10531781519617951,
+          "n_authors": 3671
+        }
+      },
+      "b_vs_c": {
+        "r2_test_B": 0.028542975839480844,
+        "r2_test_C": 0.7472338370436404,
+        "note": "B has no controls; gap B->C is how much of B's fit was genre/fame leaking through the cover"
+      },
+      "d_vs_c": {
+        "delta_r2_test_D_minus_C": 0.0062441305345510845,
+        "delta_r2_test_D_minus_A": 0.007083975314486013,
+        "paired_sqerr_D_vs_C": {
+          "mean_sqerr_reduction": 0.00650013617930258,
+          "t": 3.8675333188818035,
+          "p": 0.0001118479955525661,
+          "n_authors": 3671
+        }
+      }
+    },
+    "y_rating": {
+      "models": {
+        "A": {
+          "n_params": 199,
+          "r2_train": 0.351470483966133,
+          "r2_test": 0.3641018725469961,
+          "rmse_test": 0.2449340449773795
+        },
+        "B": {
+          "n_params": 8,
+          "r2_train": 0.0017810610502276836,
+          "r2_test": 0.00041293859380764353,
+          "rmse_test": 0.307090014332925
+        },
+        "C": {
+          "n_params": 206,
+          "r2_train": 0.35195802860437,
+          "r2_test": 0.36275251024920563,
+          "rmse_test": 0.24519377967876832
+        },
+        "D": {
+          "n_params": 299,
+          "r2_train": 0.36236196483480765,
+          "r2_test": 0.3698275012899207,
+          "rmse_test": 0.24382885811924154
+        }
+      },
+      "a_vs_c": {
+        "block_wald_f_train": {
+          "F": 3.2584432574661286,
+          "p": 0.0018445332219706077,
+          "df_num": 7,
+          "df_denom": 33639
+        },
+        "delta_r2_test": -0.0013493622977904796,
+        "delta_r2_test_ci95": [
+          -0.0022223266784460933,
+          -0.00046955630863634954
+        ],
+        "delta_rmse_test": 0.0002597347013888196,
+        "paired_sqerr_test": {
+          "mean_sqerr_reduction": -0.00019440459438959783,
+          "t": -2.782337136331339,
+          "p": 0.0054244815563873625,
+          "n_authors": 3671
+        }
+      },
+      "b_vs_c": {
+        "r2_test_B": 0.00041293859380764353,
+        "r2_test_C": 0.36275251024920563,
+        "note": "B has no controls; gap B->C is how much of B's fit was genre/fame leaking through the cover"
+      },
+      "d_vs_c": {
+        "delta_r2_test_D_minus_C": 0.007074991040715073,
+        "delta_r2_test_D_minus_A": 0.005725628742924593,
+        "paired_sqerr_D_vs_C": {
+          "mean_sqerr_reduction": 0.001714001283103374,
+          "t": 5.121962518138926,
+          "p": 3.1792920173932016e-07,
+          "n_authors": 3671
+        }
+      }
+    }
+  }
+}
