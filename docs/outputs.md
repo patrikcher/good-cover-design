@@ -1,4 +1,4 @@
-# Pipeline outputs (inputs to the November modeling)
+# Pipeline outputs (inputs to the modeling)
 
 All keyed by `key` = the dataset's `bookId` slug (e.g. `2767052-the-hunger-games`; some run to
 ~130 chars). Join on it.

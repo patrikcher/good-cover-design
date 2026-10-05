@@ -47,7 +47,7 @@ Covers are fetched from the `coverImg` URL. Two things to know:
 
 Consequence for the **thumbnail-legibility** feature: its 160 px downscale is only ~3× from the
 480 px base, gentler than a true print→browse-thumbnail cliff. If that feature comes out null
-in the November modeling, "test too gentle to detect it" is a live explanation.
+in the modeling, "test too gentle to detect it" is a live explanation.
 
 ## Sample for smoke tests
 

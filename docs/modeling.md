@@ -1,4 +1,4 @@
-# Modeling — the November benchmark
+# Modeling: the benchmark
 
 The question: do the five confidently-stated cover-design rules (single focal point, high
 text/background contrast, two-font maximum, thumbnail legibility, low clutter) predict a
@@ -118,8 +118,7 @@ Neither is a high bar — (a) is roughly the CLIP upper bound's entire margin ov
 
 ## Result
 
-See [`build-log.md`](../build-log.md) (November section) for every number and
-`article-assets/model-comparison.md` for the rendered tables. In short: controlling for genre,
+See `article-assets/model-comparison.md` for the rendered tables and the README for the headline numbers. In short: controlling for genre,
 author fame, book age, series, and publisher, the five rules add **no reach improvement that
 survives re-splitting** (5-fold ΔR² ≈ +0.0006, one fold negative, single-split paired test
 n.s.) and **nothing to average rating**. Individually: focal-point concentration **−5%/SD**

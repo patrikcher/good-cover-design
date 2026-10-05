@@ -99,9 +99,9 @@ python -m scripts.recompute_saliency --merge        # write into features_full.p
 machine's fast cores and drop to ~14s/cover — slower overall than one clean process. (The
 October `extract_features` run sharded fine because EasyOCR is lighter per-process.)
 
-See [`outputs.md`](outputs.md) for every file the November modeling consumes.
+See [`outputs.md`](outputs.md) for every file the modeling consumes.
 
-## Per-feature caveats (carry into the November modeling)
+## Per-feature caveats (carry into the modeling)
 
 - **`sal_gini` was redesigned — deployed 2026-09-05.** The original method (spectral residual)
   fired on any high-contrast region, so a minimal dark cover scored as "one focal point" partly
@@ -129,8 +129,8 @@ See [`outputs.md`](outputs.md) for every file the November modeling consumes.
   with contrast. v2 (`legib_box_retention`) uses the detector, which degrades gracefully.
   v1 is retained as a transparently-noisy column. Repro:
   `python -m scripts.analysis.thumbnail_legibility_ab`.
-- **Contrast is NaN for wordless covers.** ~8% of covers. Give the November models an explicit
-  missingness indicator; don't impute silently.
+- **Contrast is NaN for wordless covers.** 2.5% of covers at full N (1,049/42,342). Give the
+  models an explicit missingness indicator; don't impute silently.
 - **Collinearity, full 42,344, post-DeepGaze** (`python -m scripts.smoke_features_report
   --features data/features_full.parquet --no-sheet`): the primary `sal_gini` (DeepGaze) is no
   longer in the |spearman| > 0.6 list at all — `sal_gini`↔`feature_congestion` −0.23,
