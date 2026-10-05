@@ -19,7 +19,7 @@ Two articles came out of one build:
 | # | Article | Month | What it covers |
 |---|---|---|---|
 | 1 | Architecture Teardown | September 2026 | Building the cover feature-extraction pipeline: [Can "Good Book Cover Design" Be Measured?](https://medium.com/@patrickcher/can-good-book-cover-design-be-measured-39ff30a38ff9) |
-| 2 | Empirical Benchmark | October 2026 | Whether any of the 5 rules predict success once confounds are controlled: _link added on publication_ |
+| 2 | Empirical Benchmark | October 2026 | Whether any of the 5 rules predict success once confounds are controlled: [Does "Good Book Cover Design" Predict a Book's Success?](https://medium.com/@patrickcher/does-good-book-cover-design-predict-a-books-success-23df22ad6fd2) |
 
 ---
 
